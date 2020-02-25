@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+    <!--    默认配置方式:default-config   -->
+    <default-config>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/db_stu_manage</property>
+        <property name="user">root</property>
+        <property name="password">lzy123</property>
+        <property name="initialPoolSize">10</property>
+        <property name="maxIdleTime">30</property>
+        <property name="maxPoolSize">100</property>
+        <property name="minPoolSize">10</property>
+    </default-config>
+    <!--    自定义配置方式  -->
+<!--    <named-config name="mySource">-->
+<!--        <property name="driverClass">com.mysql.jdbc.Driver</property>-->
+<!--        <property name="jdbcUrl">jdbc:mysql://localhost:3306/bookstore</property>-->
+<!--        <property name="user">root</property>-->
+<!--        <property name="password">xxxx</property>-->
+<!--        <property name="initialPoolSize">10</property>-->
+<!--        <property name="maxIdleTime">30</property>-->
+<!--        <property name="maxPoolSize">100</property>-->
+<!--        <property name="minPoolSize">10</property>-->
+<!--    </named-config>-->
+</c3p0-config>
