@@ -45,6 +45,7 @@
 
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script>
+
         function login() {
             //alert("登录按钮被点击!");
             var username = $("#username").val();
@@ -63,6 +64,12 @@
                 }
             });
         }
+
+        $(document).keydown(function () {
+            if (event.keyCode == 13) {
+                $("#login_btn").click();
+            }
+        })
     </script>
 </head>
 
@@ -122,7 +129,9 @@
                 <div class="col-sm-12">
                     <div class="signin-footer">
                         <!--通过form的ID实现表单外按钮提交表单-->
-                        <input type="button" onclick="login()" value="登录" class="btn signin_btn">
+                        <input id="login_btn" type="button" onclick="login()" value="登录"
+                               class="btn signin_btn">
+
                         <!--                        <p>-->
                         <!--                            您还没有账户 ?-->
                         <!--                            <a href="signup.html">点此注册</a>-->
